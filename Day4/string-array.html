@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS_Exercise(string+array)</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="JS_string.css">
+</head>
+<body>
+	<section id="wrap_container">
+		<h1>JAVASCRIPT STRING & ARRAY</h1>
+		<h2>BÀI TẬP PHẦN STRING</h2>
+		<br>
+		<label>Nhập chuỗi thứ nhất: </label>
+		<input id="input1" type="text" name="first_String">
+		<br><br>
+		<label>Nhập chuỗi thứ hai:</label>
+		<input id="input2" type="text" name="second_String">
+		<br><br>
+		<button type="button" onclick="getData()">Xác nhận</button>
+		<p class="thread"><b>Bài 1.</b> Viết 1 function kiểm tra 1 chuỗi có nằm trong chuỗi còn lại hay không. Nếu có trả về true, nếu không trả về false- Đầu vào có 2 tham số : Tham số 1 là chuỗi ban đầu, tham số 2 là chuỗi cần kiểm tra</p>
+		<button type="button" onclick="checkStringExist(arrStr)">Kết quả</button>
+		<p class="result"></p>
+		<hr>
+		<p class="thread"><b>Bài 2.</b> Viết hàm rút ngắn chuỗi bằng cách cắt ra 8 ký tự đầu của 1 chuỗi và thêm dấu ba chấm ở cuối chuỗi.</p>
+		<button type="button" onclick="shortenString(arrStr)">Kết quả</button>
+		<p class="result"></p>
+		<hr>
+		<p class="thread"><b>Bài 3.</b> Viết hàm có tác dụng biến 1 chuỗi thành chỉ viết hoa từ đầu tiên.</p>
+		<button type="button" onclick="capitalizeString(arrStr)">Kết quả</button>
+		<p class="result"></p>
+		<hr>
+		<p class="thread"><b>Bài 4.</b> Cho 1 chuỗi, hãy viết hàm có tác dụng sao chép đó chuỗi lên 10 lần.</p>
+		<button type="button" onclick="repeatString(arrStr)">Kết quả</button>
+		<p class="result"></p>
+		<hr>
+		<p class="thread"><b>Bài 5.</b> Cho 1 chuỗi, hãy viết hàm có tác dụng sao chép đó chuỗi lên 10 lần, ngăn cách nhau bởi dấu gạch ngang. </p>
+		<button type="button" onclick="repeatString2(arrStr)">Kết quả</button>
+		<p class="result"></p>
+		<hr>
+		<p class="thread"><b>Bài 6.</b> Cho 1 chuỗi và 1 số nguyên n > 1, hãy viết hàm có tác dụng sao chép đó chuỗi lên n lần, ngăn cách nhau bởi dấu gạch ngang.</p>
+		<label>Nhập số nguyên lớn hơn 1: </label><input id="index" name="index">
+		<button onclick="checkNumber()">Xác nhận</button>
+		<p id="result_check"></p><br><br>
+		<button type="button" onclick="repeatString3(arrStr, index)">Kết quả</button>
+		<p class="result"></p>
+		<hr>
+		<p class="thread"><b>Bài 7.</b> Viết hàm đảo ngược chuỗi. Viết dunction với đầu vào là 1 chuỗi string. Trả về chuỗi đảo ngược của chuỗi đó</p>
+		<button type="button" onclick="reverseString(arrStr)">Kết quả</button>
+		<p class="result"></p>
+		<hr>
+		<p class="thread"><b>Bài 8.</b> Cho 1 chuỗi, kiểm tra xem chuỗi đó có phải chuỗi đối xứng hay không (đọc xuôi hay ngược đều như nhau, không tính khoảng trắng, không phân biệt hoa thường), kết quả trả về true hoặc false</p>
+		<button type="button" onclick="checkReverse(arrStr)">Kết quả</button>
+		<p class="result"></p>
+		<hr>
+		<h2>BÀI TẬP PHẦN ARRAY</h2>
+		<p class="thread"><b>Bài 9.</b> Viết hàm tìm ra số nhỏ nhất trong mảng các số.</p>
+		<p>Nhập các số hạng cho mảng: </p>
+		<input class="array" type="text">
+		<input class="array" type="text">
+		<input class="array" type="text">
+		<br><br>
+		<button type="button" onclick="minNumbers()">Kết quả</button>
+		<p class="result"></p>
+		<hr>
+		<p class="thread"><b>Bài 10.</b> Viết hàm tìm ra số lớn thứ nhì trong mảng các số.</p>
+		<p>Nhập các số hạng cho mảng: </p>
+		<input class="child" type="text">
+		<input class="child" type="text">
+		<input class="child" type="text">
+		<input class="child" type="text">
+		<br><br>
+		<button type="button" onclick="max2Number()">Kết quả</button>
+		<p class="result"></p>
+		<hr>
+		<p class="thread"><b>Bài 11.</b> Viết hàm truyền vào 1 mảng tên học viên, sắp xếp lại mảng này theo chiều ngược của bảng chữ cái.</p>
+		<p>Nhập tên học viên vào mảng</p>
+		<input class="name" type="text">
+		<input class="name" type="text">
+		<input class="name" type="text">
+		<br><br>
+		<button type="button" onclick="sortStudents()">Kết quả</button>
+		<p class="result"></p>
+		<hr>
+		<p class="thread"><b>Bài 12.</b> Tính tổng các số chia hết cho 5 từ 0 -> 100</p>
+		<button type="button" onclick="sumResult()">Kết quả</button>
+		<p class="result"></p>
+		<hr>
+		<p class="thread"><b>Bài 13.</b> Viết hàm cho phép truyền vào 1 mảng các số, kết quả trả về là 1 mảng mới với các số là số dư tương ứng khi chia mảng cũ cho 2.</p>
+		<p>Nhập các phần tử của mảng: </p>
+		<input class="number" type="text">
+		<input class="number" type="text">
+		<input class="number" type="text">
+		<input class="number" type="text">
+		<input class="number" type="text">
+		<button type="button" onclick="getArr()">Xác nhận</button><span id="checkInput"></span>
+		<br><br>
+		<button type="button" onclick="newArray(oldArr)">Kết quả</button>
+		<p class="result"></p>
+		<p class="thread"><b>Bài 14.</b> Cho 1 mảng các chuỗi. Viết hàm lọc ra các phần tử có độ dài lớn nhất</p>
+		<p>Nhập các phần tử của mảng: </p>
+		<input class="string" type="text">
+		<input class="string" type="text">
+		<input class="string" type="text">
+		<input class="string" type="text">
+		<input class="string" type="text">
+		<button type="string" onclick="getStrings()">Xác nhận</button><span id="checkCondition"></span>
+		<br><br>
+		<button type="button" onclick="sortArr(originArr)">Kết quả</button>
+		<p class="result"></p>
+	<script src="string.js"></script>
+</body>
+</html>

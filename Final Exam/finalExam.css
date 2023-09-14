@@ -1,0 +1,440 @@
+
+@font-face {
+  font-family: Marlena;
+  src: url(Marlena.ttf);
+}
+
+.body-sub {
+	background-color: #F0F0E7;
+}
+.header {
+	height: 10vw;
+	width: 100%;
+	background-color: #8c8787;
+	opacity: 0.8;
+	position: fixed;
+	top: -10vw;
+	animation: dropdown 1.5s forwards ease-in-out;
+	z-index: 2;
+}
+
+.avatar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.music {
+	height: 100%;
+	animation: leftToright 1.5s forwards linear;
+}
+
+.music img {
+	height: 100%;
+	opacity: 0.6;
+}
+
+.music img:hover {
+	cursor: pointer;
+}
+
+.header-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header-text span a {
+	font-family: Marlena;
+	color: white;
+	font-size: 4vw;
+	text-decoration: none;
+	animation: changeCol 1s 1s forwards linear;
+	transition: color 1s linear;
+}
+
+.avatar a {
+	text-decoration: none;
+	height: 100%;
+}
+
+.avatar a img {
+	height: 100%;
+}
+
+.theme {
+	position: relative;
+	top: -10vw;
+}
+
+.theme_above {
+	background-color: #998686;
+	opacity: 0.7;
+	z-index: 1;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transition: opacity 0.5s linear;
+}
+
+.theme img {
+	width: 100%;
+}
+
+.css {
+	opacity: 0.1;
+}
+
+#menu {
+	list-style-type: none;
+	padding: 0;
+	position: absolute;
+	left: 10vw;
+	height: 100%;
+	width: 15vw;
+	margin: 0;
+	z-index: 1;
+}
+
+#menu.sub-menu {
+	left: 60vw;
+}
+
+#menu.sub-menu-me {
+	left: 40%;
+	top: 5vw;
+}
+
+#menu .title {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	visibility: hidden;
+	opacity: 0.2;
+}
+
+#menu .title a {
+	text-decoration: none;
+	color: white;
+	font-size: 2vw;
+
+}
+
+#menu .title:nth-child(1) {
+	bottom: 45%;
+	animation: runUp-tech 0.5s 0.1s forwards linear;
+}
+
+#menu .title:nth-child(2) {
+	bottom: 40%;
+	animation: runUp-about 0.5s 0.6s forwards linear;
+}
+
+#menu .title:nth-child(3) {
+	bottom: 35%;
+	animation: runUp-ps 0.5s 1.1s forwards linear;
+}
+
+#menu .title:nth-child(4) {
+	bottom: 30%;
+	animation: runUp-music 0.5s 1.6s forwards linear;
+}
+
+#menu .title ul {
+	position: absolute;
+	top: 0;
+	padding: 0;
+	width: 150%;
+	height: 100%;
+	list-style-type: none;
+	display: flex;
+	left: 100%;
+	top: 50%;
+	visibility: hidden;
+}
+
+#menu .title ul li {
+	flex: 1 1 50%;
+}
+
+#menu .title ul li a {
+	font-size: 1.5vw;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 3vw;
+	text-align: left;
+}
+
+#menu .title ul li a:hover {
+	color: white;
+}
+
+#menu .title.code:hover ul {
+	animation: showUp 0.5s forwards linear;
+}
+
+#menu .title:hover a {
+	color: #fadd5d;
+}
+
+#motto {
+	position: absolute;
+	right: 10%;
+	top: 50%;
+	animation: appear 1.5s 0.5s forwards linear;
+	visibility: hidden;
+}
+
+#motto span {
+	font: 400 100px/1.3 'Oleo Script', Helvetica, sans-serif;
+	font-size: 2vw;
+	color: yellow;
+	
+}
+
+.HTML-CSS.slide {
+	margin-bottom: 4vw;
+	position: relative;
+	top: -8vw;
+}
+
+.HTML-CSS .subject {
+	justify-content: center;
+	background-color: #d1ceb3;
+	height: 3vw;
+	line-height: 3.3vw;
+}
+
+.HTML-CSS .subject span {
+	font-size: 1.5vw;
+	color: white;
+}
+
+.HTML-CSS .subject span:hover {
+	cursor: pointer;
+}
+
+.HTML-CSS .name-sub span a {
+	text-decoration: none;
+	color: #00ace6;
+	font-size: 1.5vw;
+}
+
+.HTML-CSS .name-sub span a:hover {
+	text-decoration: underline;
+}
+
+#css-container, #js-container {
+	width: 100%;
+	height: 55vw;
+	position: relative;
+	overflow: hidden;
+}
+
+#css-carousel, #js-carousel {
+	position: relative;
+	width: 500%;
+	height: 53vw;
+	display: flex;
+	flex-direction: row;
+}
+
+.carousel-child, .js-carousel-child {
+	flex: 0 0 20%;
+	height: 100%;
+}
+
+iframe {
+	height: 100%;
+	width: 100%;
+	border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.fas.fa-angle-left, .fas.fa-angle-right {
+	position: absolute;
+	top: 40%;
+	color: grey;
+	opacity: 0.5;
+}
+
+.fas.fa-angle-left:hover , .fas.fa-angle-right:hover {
+	cursor: pointer;
+}
+
+.fas.fa-angle-left {
+	left: 2vw;
+}
+
+.fas.fa-angle-right {
+	right: 2vw;
+}
+
+.footer {
+	opacity: 0.9;
+	height: 20vw;
+}
+
+.footer-child {
+	height: 100%;
+}
+
+.footer-child .card {
+	height: 100%;
+}
+
+.footer-child .card-body a {
+	height: 100%;
+}
+
+.footer .card .card-body img {
+	width: 100%;
+	height: 100%;
+}
+
+.card-header b {
+	font-size: 1.5vw;
+}
+
+.card-body.exercise p {
+	font-size: 1.5vw;
+}
+
+.card-body.exercise b {
+	font-size: 1.5vw;
+}
+
+.set-height {
+	height: 45vw;
+}
+
+.set-height-2 {
+	height: 30vw;
+}
+
+.set-height-3 {
+	height: 25vw;
+}
+
+.position {
+	position: relative;
+	top: -4vw;
+}
+
+.row.inform .card-header, .about .card-header {
+	font-size: 2vw;
+	color: red;
+	font-weight: bold;
+	text-align: center;
+}
+
+#myself {
+	height: 100%;
+}
+
+#myself img {
+	height: 100%;
+	width: 100%;
+}
+
+#myself .card-body {
+	text-align: center;
+	font-size: 2vw;
+}
+
+#myself .card-body p {
+	color: #17a2b8;
+}
+
+.position-fix {
+	position: relative;
+	top: -6vw;
+}
+
+@keyframes dropdown {
+	to {
+		top: 0;
+	}
+}
+
+@keyframes leftToright {
+	from {
+		left: -42vw;
+	}
+	to {
+		left: 3vw;
+	}
+}
+
+@keyframes changeCol {
+	to {
+		color: #fadd5d;
+	}
+}
+
+@keyframes runUp-tech {
+	to {
+		bottom: 50%;
+		visibility: visible;
+		opacity: 0.6;
+	}
+} 
+
+@keyframes runUp-about {
+	to {
+		bottom: 45%;
+		visibility: visible;
+		opacity: 0.6;
+	}
+} 
+
+@keyframes runUp-ps {
+	to {
+		bottom: 40%;
+		visibility: visible;
+		opacity: 0.6;
+	}
+}
+
+@keyframes runUp-music {
+	to {
+		bottom: 35%;
+		visibility: visible;
+		opacity: 0.6;
+	}
+}  
+ @keyframes showUp {
+ 	to {
+ 		visibility: visible;
+ 		left: 100%;
+ 		top: 0;
+ 		opacity: 0.6;
+ 	}
+ }
+
+@keyframes appear {
+	to {
+		visibility: visible;
+		top: 45%;
+		right: 10%;
+		transform: scale(1.2);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

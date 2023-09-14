@@ -1,0 +1,57 @@
+* {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 18px;
+}
+body {
+	background-color: #eee;
+}
+#wrap_container {
+	padding: 10px 5px 5px 20px;
+	width: 80%;
+	margin: auto;
+	background-color: white;
+}
+h1 {
+	text-align: center;
+	font-size: 20px;
+}
+h2 {
+	padding-left: 20px;
+	margin: auto;
+	text-align: center;
+	background-color: #e6e6e6;
+}
+.lesson {
+	padding: 0 10px 0 20px;
+}
+p .thread {
+	border: 1px solid grey;
+	background-color: #eee;
+}
+code {
+	font-size: 15px;
+	color: red;
+	text-align: left;
+
+}
+button {
+	background-color: #4CAF50;
+	color: white;
+}
+.result, #result_check {
+	display: inline-block;
+	margin: 0;
+}
+.array, .number, .string, .child {
+	width: 4vw;
+}
+.name {
+	width: 16vw;
+}
+
+
+
+
+
+
+

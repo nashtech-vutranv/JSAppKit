@@ -1,0 +1,417 @@
+* {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.view {
+	height: 100vh;
+	padding-top: 10vh;
+}
+
+.f-size {
+	width: 100%;
+	height: 100%;
+}
+
+img {
+	position: absolute;
+}
+
+.mid-autumn-card {
+	position: relative;
+	height: 80vh;
+	overflow: hidden;
+}
+
+.mid-autumn-card .background {
+	z-index: -1;
+}
+
+.mid-autumn-card .lantern1, .mid-autumn-card .lantern2, .mid-autumn-card .lantern3 {
+	position: absolute;
+	z-index: 2;
+}
+
+.mid-autumn-card .lantern1 {
+	width: 4.5vw;
+	height: 7.5vw;
+	top: 11vh;
+	left: 4vw;
+	animation: moveAround 5s infinite linear;
+	-webkit-animation: moveAround 5s infinite linear;
+	-moz-animation: moveAround 5s infinite linear;
+	-ms-animation: moveAround 5s infinite linear;
+} 
+
+.mid-autumn-card .lantern2 {
+	width: 5vw;
+	height: 8vw;
+	top: 11.5vh;
+	left: 27vw;
+	animation: moveArounds 4s infinite linear;
+	-webkit-animation: moveArounds 4s infinite linear;
+	-moz-animation: moveArounds 4s infinite linear;
+	-ms-animation: moveArounds 4s infinite linear;
+}
+
+.mid-autumn-card .lantern3 {
+	width: 1.5vw;
+	height: 5vw;
+	top: 13vh;
+	left: 40vw;
+	animation: moveAround 5s infinite linear;
+	-webkit-animation: moveAround 5s infinite linear;
+	-moz-animation: moveAround 5s infinite linear;
+	-ms-animation: moveAround 5s infinite linear;
+}
+
+.mid-autumn-card .moon {
+	width: 27vw;
+	height: 27vw;
+	position: absolute;
+	z-index: 2;
+	left: 5vw;
+	top: 13vh;
+    animation: spin 30s infinite linear;
+    -webkit-animation: spin 30s infinite linear;
+    -moz-animation: spin 30s infinite linear;
+    -ms-animation: spin 30s infinite linear;
+}
+
+.mid-autumn-card .text {
+	position: absolute;
+	width: 9vw;
+	height: 3.5vw;
+	top: 38vh;
+	left: 14vw;
+	z-index: 2;
+	animation: rotateX 4s forwards linear;
+	-webkit-animation: rotateX 4s forwards linear;
+	-moz-animation: rotateX 4s forwards linear;
+	-ms-animation: rotateX 4s forwards linear;
+}
+
+.mid-autumn-card .group-1 {
+	position: absolute;
+	width: 10vw;
+	height: 5vw;
+	z-index: 1;
+	left: 3vw;
+	top: 70vh;
+	animation: gothroughMoon 20s infinite linear;
+	-webkit-animation: gothroughMoon 20s infinite linear;
+	-moz-animation: gothroughMoon 20s infinite linear;
+	-ms-animation: gothroughMoon 20s infinite linear;
+}
+
+.mid-autumn-card .group-1 .cloud-1 {
+	z-index: 1;
+	position: absolute;
+}
+
+.mid-autumn-card .group-1 .rabit-1 {
+	position: absolute;
+	z-index: 2;
+	left: 4vw;
+	top: -3vh;
+	width: 2.5vw;
+}
+
+.mid-autumn-card .group-2 {
+	position: absolute;
+	z-index: 1;
+	top: 40vh;
+	right: 2vw;
+	width: 11vw;
+	height: 25vh;
+	animation: moveUp-Down 20s infinite linear;
+	-webkit-animation: moveUp-Down 20s infinite linear;
+	-moz-animation: moveUp-Down 20s infinite linear;
+	-ms-animation: moveUp-Down 20s infinite linear;
+}
+
+.mid-autumn-card .group-2 .cloud-2 {
+	position: absolute;
+	left: -5vw;
+	top: 1vh;
+	z-index: 1;
+	transform: scale(0.6);
+}
+
+.mid-autumn-card .group-2 .rabit-2 {
+	position: absolute;
+	z-index: 2;
+	left: 3.5vw;
+	top: 0;
+	animation: jumps 1s infinite linear;
+	-webkit-animation: jumps 1s infinite linear;
+	-moz-animation: jumps 1s infinite linear;
+	-ms-animation: jumps 1s infinite linear;
+}
+
+.mid-autumn-card .group-2 .rabit-3 {
+	position: absolute;
+	left: 0;
+	top: 0.5vh;
+	z-index: 2;
+	
+}
+
+.letter {
+	background-color: #2f4942;
+	padding: 4vh 1vw 4vh 1vw;
+	overflow: hidden;
+}
+
+.letter .content {
+	width: 100%;
+	height: 100%;
+	color: white;
+	text-align: center;
+}
+
+.letter .content h1 {
+	opacity: 0;
+	color: #2f4942;
+	animation: appear 4s forwards linear;
+	font-size: 3vw;
+	margin-top: 0;
+}
+
+.letter .content .cake {
+	top: -5vh;
+	width: 100%;
+	position: relative;
+	animation: moveDown 2s forwards linear;
+}
+
+.letter .content .cake img {
+	width: 80%;
+	height: 50vh;
+	position: absolute;
+	left: 3.5vw;
+}
+
+audio {
+	position: absolute;
+	width: 20vw;
+	height: 6vh;
+	top: 100vh;
+	left: 12vw;
+	animation: moveUp 2s forwards linear;
+}
+
+@keyframes moveAround {
+	25% {
+		transform: rotateZ(20deg);
+	}
+	50% {
+		transform: rotateZ(0deg);
+	}
+	75% {
+		transform: rotateZ(-20deg);
+	}
+	100% {
+		transform: rotateZ(0deg);
+	}
+}
+
+@keyframes moveArounds {
+	25% {
+		transform: rotateZ(15deg);
+	}
+	50% {
+		transform: rotateZ(0deg);
+	}
+	75% {
+		transform: rotateZ(-15deg);
+	}
+	100% {
+		transform: rotateZ(0deg);
+	}
+}
+
+@keyframes spin {
+	50% {
+		transform: rotate(360deg);
+	}
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+
+@keyframes rotateX {
+	to {
+		transform: rotateX(360deg);
+	}
+}
+
+@keyframes gothroughMoon {
+	to {
+		top: -10%;
+		left: 110%;
+	}
+}
+
+@keyframes moveUp-Down {
+	50% {
+		top: 40%;
+		right: 0;
+	}
+	100% {
+		top: 75%;
+		right: 5%;
+	}
+}
+
+@keyframes moveUp-Downs {
+	50% {
+		top: 60%;
+		right: 0;
+	}
+	100% {
+		top: 75%;
+		right: 5%;
+	}
+}
+
+@keyframes moveUp-Downss {
+	50% {
+		top: 30vh;
+		right: 10vw;
+	}
+	100% {
+		top: 35vh;
+	}
+}
+ 
+@keyframes jumps {
+	0% {
+		top: 0;
+	}
+	50% {
+		top: 2vh;
+	}
+	70% {
+		top: 0;
+	}
+	100% {
+		top: 0;
+	}
+}
+
+@keyframes appear {
+	to {
+		opacity: 1;
+		color: white;
+	}
+}
+
+@keyframes moveDown {
+	to {
+		top: 3vh;
+	}
+}
+
+@keyframes moveDowns {
+	to {
+		top: 10vh;
+	}
+}
+
+@keyframes moveUp {
+	to {
+		top: 85%;
+	}
+}
+@keyframes moveUps {
+	to {
+		top: 25vh;
+	}
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 991px) {
+	.mid-autumn-card .text {
+		top: 35vh;
+	}
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+	.mid-autumn-card .moon {
+		top: 23vh;
+	}
+	.mid-autumn-card .text {
+		top: 42vh;
+	}
+	.mid-autumn-card .group-2 {
+		top: 60vh;
+		width: 10vw;
+		height: 20vh;
+		right: 3vw;
+		animation: moveUp-Downs 20s infinite linear;
+		-webkit-animation: moveUp-Downs 20s infinite linear;
+		-moz-animation: moveUp-Downs 20s infinite linear;
+		-ms-animation: moveUp-Downs 20s infinite linear;
+	}
+	audio {
+		left: 9vw;
+	}
+	.letter .content .cake img {
+		height: 40vh;
+	}
+	.letter .content .cake {
+		top: -5vh;
+		animation: moveDown 1s forwards linear;
+	}
+	.letter .content h1 {
+		margin-top: 12vh;
+	}
+
+}
+
+@media only screen and (max-width: 767px) {
+	.mid-autumn-card {
+		height: 50vh;
+		padding: 0;
+	}
+	.mid-autumn-card .lantern1 {
+		top: 7vh;
+	}
+	.mid-autumn-card .lantern2 {
+		top: 7vh;
+	}
+	.mid-autumn-card .lantern3 {
+		top: 8vh;
+		left: 60vw;
+	}
+	.mid-autumn-card .moon {
+		left: 20vw;
+	}
+	.mid-autumn-card .text {
+		left: 29vw;
+		top: 24vh;
+	}
+	.mid-autumn-card .group-1 {
+		top: 30vh;
+		left: 5vw;
+	}
+	.mid-autumn-card .group-2 {
+		top: 35vh;
+		right: 30vw;
+		transform: scale(0.6);
+		animation: moveUp-Downss 10s infinite linear;
+	}
+	.letter {
+		height: 50vh;
+	}
+	.letter .content .cake {
+		width: 70vw;
+	}
+	.letter .content .cake img {
+		height: 35vh;
+	}
+	audio {
+		left: 65vw;
+		animation: moveUps 2s forwards linear;
+	}
+}
+
+
